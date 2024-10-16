@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;  
+}
+
+body{
+    font-family: "Delicious Handrawn", cursive;
+    text-align: center;
+    background-image: url("background.png");
+    background-size: 370px 1000px;
+}
+
+.delicious-handrawn-regular {
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.kranky-regular {
+    font-family: "Kranky", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.mystery-quest-regular {
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.main{
+    font-family: "Kranky", serif;
+    font-size: 1.6rem;
+}
+
+.text{
+    margin: 1.7%;
+    font-family: "Delicious Handrawn", cursive;
+    font-size: 1.4rem;
+}
+
+/*Marque styles */
+.marquee1 {
+    display: flex;
+    justify-content:none ;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.marquee1 img{
+    width: 35%;
+    height: 180px;
+}
+
+.track {
+   position: relative;
+   white-space: nowrap;
+   will-change: transform;
+   animation: marquee1 7s linear infinite;
+}
+  
+ @keyframes marquee1 {
+  from { transform: translateX(0); }
+  to { transform: translateX(-82%); }
+  }
+
+  .marquee2 {
+    display: flex;
+    justify-content:none ;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.marquee2 img{
+    width: 50%;
+    height: 120px;
+}
+
+.track2 {
+   position: relative;
+   white-space: nowrap;
+   will-change: transform;
+   animation: marquee2 5s linear infinite;
+}
+  
+ @keyframes marquee2 {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+  }
+
+button{
+    margin: 0.5%;
+    background-color: rgb(247, 184, 255);
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+button:hover{
+    background-color: rgb(255, 234, 41);
+}
+
+#ps{
+    font-size: 1.5rem;
+}
+
+button img{
+    width:150px;
+    border-radius: 20%;
+}  
